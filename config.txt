@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Project Title: Awesome App Premium v2
+=======
+Project Title: Awesome App (Dark Mode Edition)
+>>>>>>> feature-darkmode
