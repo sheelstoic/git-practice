@@ -1,0 +1,26 @@
+
+name: Basic CI CD Workflow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify repository files
+        run: |
+          echo "CI/CD workflow started successfully"
+          echo "Repository files:"
+          ls -la
+
+      - name: Test workflow
+        run: |
+          echo "Basic workflow test passed"
